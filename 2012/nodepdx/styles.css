@@ -1,0 +1,30 @@
+.no-support-message { display:none; }
+.impress-not-supported .no-support-message { display:block; }
+
+/* additional styles just to make things look a bit nicer */
+body {
+  background:#042029;
+  font: 48px/64px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color:#839496; }
+.step { width:940px; margin:0 auto 24px auto; text-align:center; opacity: 0.025; }
+.step.active { opacity: 1;}
+ul {
+  text-align: left;
+  margin-left: 100px;
+}
+p * {
+  font-size: 10px;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #839496;
+}
+li, li a {
+  font-size: 48px;
+}
+h1 { line-height: 150%;}
+h2 { color: #2AA198;}
+.bad { color: #D33682; }
+.good { color: #268bd2;}
+.name { color: #859900; }
+.time { color: #6c71c4;}
