@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Geddy.js | A Node.js Framework that gives you structure without getting in your way</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="impress">
+			<div class="no-support-message">
+				Your browser doesn't support this presentation. Try Chrome or Safari.
+			</div>
+
+            <div class="step" data-x="500" data-y="800">
+                <h2><span class="name">GeddyJS</span></h2>
+                <h2>A better web framework for Node.</h2>
+                <h3><a href="http://geddyjs.org">http://geddyjs.org</a></h3>
+            </div>
+
+			<div class="step" data-x="500" data-y="400">
+				<h2>My name is <br/><span class="name" style="line-height: 150%">Daniel Erickson</span></h2>
+			</div>
+
+			<div class="step" data-x="500" data-y="0">
+				I work at <span class="name">Yammer</span> as a Senior Javascript Engineer
+			</div>
+
+			<div class="step" data-x="500" data-y="-400">
+				I work with <span class="name">Node</span> almost every day
+			</div>
+
+			<div class="step" data-x="500" data-y="-800">
+				We built our upload service on <span class="name">Node</span>
+			</div>
+
+			<div class="step" data-x="500" data-y="-1200">
+				We built our real time document collaboration service on <span class="name">Node</span>
+			</div>
+
+			<div class="step" data-x="-1200" data-y="-3200" data-rotate-x="60" data-rotate-y="60" data-rotate-z="30">
+				<h2>So lets talk about <span class="name">Node</span></h2>
+			</div>
+
+			<div class="step" data-x="-2600" data-y="-1200" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="4">
+				<span class="name">Node</span> is good at helping you create highly scalable prototypes without a whole lot of effort
+			</div>
+
+            <div class="step" data-x="-5000" data-y="-1200" data-rotate-x="45" data-rotate-z="90" data-scale="8">
+                <span class="name">Node</span> has a great module system
+            </div>
+
+            <div class="step" data-x="-9000" data-y="-1200" data-rotate-x="60" data-rotate-z="90" data-scale="16">
+                Once you get past the prototype stage, though, your code starts looking like <span class="bad">spaghetti</span>
+            </div>
+
+            <div class="step" data-x="-19000" data-y="-1200" data-rotate-x="75" data-rotate-z="90" data-scale="32">
+                <span class="name">Frameworks</span> help you get rid of <span class="bad">spaghetti</span>
+            </div>
+
+            <div class="step" data-x="10000" data-y="700" data-scale="0.25">
+                <h2>So lets talk about <span class="name">frameworks</span></h2>
+            </div>
+
+            <div class="step" data-x="10000" data-y="920" data-scale="0.50">
+                When you work on a team, <span class="name">frameworks</span> help your code base stay consistent
+            </div>
+
+            <div class="step" data-x="10000" data-y="1300" data-scale="1">
+                When you have a lot of dependencies, <span class="name">frameworks</span> help you keep them all in order
+            </div>
+
+            <div class="step" data-x="10000" data-y="1900" data-scale="2">
+                When you want to implement a new feature, <span class="name">frameworks</span> help you write it faster
+            </div>
+
+            <div class="step" data-x="10000" data-y="3200" data-scale="4">
+                Web <span class="name">frameworks</span> have been around for a while now
+            </div>
+
+            <div class="step" data-x="20000" data-y="3200"  data-rotate-z="90" data data-scale="1">
+                <h2>So lets talk about what's out there now</h2>
+            </div>
+
+            <div class="step" data-x="20000" data-y="4200"  data-rotate-z="95" data data-scale="1">
+                <h2>Ruby has <span class="name">Rails</span>:</h2>
+                <p>
+                    <ul style="padding-left: 200px">
+                        <li><span class="name">Rails</span> is monolithic</li>
+                        <li>convention over configuration</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="20000" data-y="5200"  data-rotate-z="100" data data-scale="1">
+                <h2>Python has <span class="name">Django</span>:</h2>
+                <p>
+                    <ul>
+                        <li><span class="name">Django</span> is modularized</li>
+                        <li>convention <i>with</i> configuration</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="20000" data-y="6200"  data-rotate-z="100" data data-scale="1">
+                <h2>Then <span class="name">Merb</span> came around:</h2>
+                <p>
+                    <ul>
+                        <li><span class="name">Merb</span> was modularized</li>
+                        <li>gave you convention without making it hard to configure</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="20000" data-y="6200"  data-rotate-z="100" data data-scale=".05">
+                but the <span class="name">Rails</span> guys <span class="bad">ate</span> it
+            </div>
+
+            <div class="step" data-x="20000" data-y="8200"  data-rotate-z="-100" data data-scale="2">
+                <h2>How about web <span class="name">frameworks</span> for <span class="name">Node</span>?</h2>
+            </div>
+
+            <div class="step" data-x="30000" data-y="8200"  data-rotate-z="-100" data-rotate-y="-90" data data-scale="20">
+                <h2><span class="name">Connect</span> came first(ish)</h2>
+            </div>
+
+            <div class="step" data-x="3500" data-y="8300"  data-rotate-z="-120" data-rotate-y="-90" data data-scale="20">
+                <h3><span class="name">Connect</span> simplified the request and response cycle</h3>
+            </div>
+
+            <div class="step" data-x="61000" data-y="-4000"  data-rotate-z="-140" data-rotate-y="-90" data data-scale="20">
+                <h3><span class="name">Connect</span> gave you middleware</h3>
+            </div>
+
+            <div class="step" data-x="61000" data-y="1000"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="1">
+                <h3><span class="name">Connect</span> also gave you <span class="bad">problems</span></h3>
+            </div>
+
+            <div class="step" data-x="61000" data-y="1070"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.5">
+                <h3><span class="name">Connect</span> <span class="bad">buffers</span> requests</h3>
+            </div>
+
+            <div class="step" data-x="61000" data-y="1140"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.25">
+                <h3><span class="name">Connect</span> <span class="bad">buffers</span> some responses</h3>
+            </div>
+
+            <div class="step" data-x="61000" data-y="1210"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h3><span class="name">Connect</span> has <span class="bad">no</span> <span class="good">structure</span></h3>
+            </div>
+
+            <div class="step" data-x="61000" data-y="1510"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h2>Then <span class="name">Express</span> came around</h2>
+            </div>
+
+            <div class="step" data-x="61050" data-y="1540"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h3><span class="name">Express</span> was built on top of <span class="name">Connect</span></h3>
+            </div>
+
+            <div class="step" data-x="61100" data-y="1570"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h3><span class="name">Express</span> gives you a real framework</h3>
+            </div>
+
+            <div class="step" data-x="61150" data-y="1600"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h3><span class="name">Express</span> gives you better routes</h3>
+            </div>
+
+            <div class="step" data-x="61200" data-y="1630"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h3><span class="name">Express</span> gives you almost <span class="bad">no</span> <span class="good">structure</span></h3>
+            </div>
+
+            <div class="step" data-x="61250" data-y="1660"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h3><span class="name">Express</span> <span class="bad">doesn't</span> give you models</h3>
+            </div>
+
+            <div class="step" data-x="61300" data-y="1690"  data-rotate-z="-20" data-rotate-y="-90" data data-scale="0.125">
+                <h3><span class="name">Express</span> gives you all the <span class="bad">problems</span> <span class="name">Connect</span> has</h3>
+            </div>
+
+            <div class="step" data-x="61000" data-y="1800"  data-rotate-z="-20" data-rotate-y="-180" data data-scale="0.0625">
+                <h2><span class="name">Flatiron</span> has a different approach</h2>
+            </div>
+
+            <div class="step" data-x="60950" data-y="1810"  data-rotate-z="-20" data-rotate-y="-180" data data-scale="0.0625">
+                <h3><span class="name">Flatiron</span> is a collection of modules that resemble a framework</h3>
+            </div>
+
+            <div class="step" data-x="60950" data-y="1830"  data-rotate-z="-20" data-rotate-y="-180" data data-scale="0.0625">
+                <h3><span class="name">Flatiron</span> is pretty awesome <span class="bad">but</span>...</h3>
+            </div>
+
+            <div class="step" data-x="60900" data-y="1860"  data-rotate-z="-10" data-rotate-y="-190" data data-scale="0.0625">
+                <h3><span class="name">Flatiron</span> has <span class="bad">no</span> <span class="good">structure</span></h3>
+            </div>
+
+            <div class="step" data-x="60900" data-y="1860"  data-rotate-z="90" data-rotate-y="0" data data-scale="1">
+                <h1>This lack of <span class="good">structure</span> is why we built <span class="name">Geddy.js</span></h1>
+            </div>
+
+            <div class="step" data-x="96000" data-y="-20660"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="name">Geddy.js</span> is written by a few of us at <span class="name">Yammer</span>:</h3>
+                <p>
+                    <ul>
+                        <li><a href="http://twitter.com/mde"><span class="name">Matt Eernisse</span> (Highlife)</a></li>
+                        <li><a href="http://twitter.com/mikeihbe"><span class="name">Mike Ihbe</span></a></li>
+                        <li><a href="http://twitter.com/techwraith"><span class="name">Daniel Erickson</span> (me)</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="96000" data-y="-21760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h2>But first some <span class="name">Yammer</span> and <span class="name">Geddy</span> history</h2>
+            </div>
+
+            <div class="step" data-x="9000" data-y="-21760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="time">Summer 2010</span>: disappointed with the current options, <span class="name">Matt</span> decides he wants to build his own web framework, <span class="name">Geddy v1</span></h3>
+            </div>
+
+            <div class="step" data-x="13000" data-y="-21760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="time">Winter 2010 - 2011</span>: <span class="name">Yammer</span> sets out to create an upload server that could handle the load of 3+ million users.</h3>
+            </div>
+
+            <div class="step" data-x="17000" data-y="-21760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="time">Early Spring 2011</span>: The <span class="name">upload service</span> launches with html5 document conversion, video transcoding, and image resizing.</h3>
+            </div>
+
+            <div class="step" data-x="21000" data-y="-21760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="time">Spring 2011</span>: We continue to build out framework-like features onto the upload service</h3> <p>
+                    <ul>
+                        <li>process rotation</li>
+                        <li>a functional router</li>
+                        <li>controller <span class="good">structure</span></li>
+                    </ul>
+                <p>
+            </div>
+
+            <div class="step" data-x="25000" data-y="-21760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="time">Fall 2011</span>: A major refactor of <span class="name">Geddy</span> is started- we merge the features that we developed for the upload service into geddy, and end up removing a lot of code in the process.</h3>
+            </div>
+
+            <div class="step" data-x="29000" data-y="-21760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="time">Winter 2011-2012</span>: The upload service is ported to use the new framework that we came up with - we call it <span class="name">Geddy v2</span></h3>
+            </div>
+
+            <div class="step" data-x="29000" data-y="-25760"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="name">Geddy v1</span> was a framework without an app</h3>
+            </div>
+
+            <div class="step" data-x="29000" data-y="-26700"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3>The <span class="name">upload service</span> was an app without a framework</h3>
+            </div>
+
+            <div class="step" data-x="29000" data-y="-27700"  data-rotate-z="90" data-rotate-y="80" data data-scale="1">
+                <h3><span class="name">Geddy v2</span> is a framework built to make building apps <span class="good">easier</span></h3>
+            </div>
+
+            <div class="step" data-x="30000" data-y="-27700"  data-rotate-z="0" data-rotate-y="80" data data-scale="2">
+                <h2><span class="name">Geddy</span> Features</h2>
+            </div>
+
+            <div class="step" data-x="34000" data-y="-27700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="3">
+                <h3><span class="name">Geddy</span> has generators</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px">$> geddy app your_app</pre>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px">$> geddy resource user</pre>
+            </div>
+
+            <div class="step" data-x="38000" data-y="-28700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="4">
+                <h3><span class="name">Geddy</span> has routes</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">router.match('/').to(
+{controller: 'Main', action: 'index'});</pre>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">router.match('/moving/pictures/:id').to(
+{controller: 'Moving', action: 'pictures'});</pre>
+            </div>
+
+            <div class="step" data-x="44000" data-y="-29700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="5">
+                <h3><span class="name">Geddy</span> has resources</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">router.resource('users');</pre>
+            </div>
+
+            <div class="step" data-x="50000" data-y="-30700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="6">
+                <h3><span class="name">Geddy</span> has content negotiation</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">/users/:id</pre>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">/users/:id.json</pre>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">/users/:id.js?callback=jsonp</pre>
+            </div>
+
+            <div class="step" data-x="60000" data-y="-31700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="7">
+                <h3><span class="name">Geddy</span> has models</h3>
+                <p>
+                    <ul style="padding-left: 200px">
+                        <li>Validation</li>
+                        <li>Data Types</li>
+                        <li>Instance Methods</li>
+                        <li>Static Methods</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="70000" data-y="-32700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="8">
+                <h3><span class="name">Geddy</span> has <span class="good">Bootstrap</span> and <span class="good">jQuery</span></h3>
+                <p>
+                    <ul style="padding-left: 200px">
+                        <li>Front end <span class="good">structure</span></li>
+                        <li>Mobile and tablet ready</li>
+                        <li>Style and typography</li>
+                        <li>Javascript components</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="80000" data-y="-33700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="9">
+                <h3><span class="name">Geddy</span> has <span class="good">EJS</span> templates</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 100px; font-size: 28px"><% if (localVar) { %> <%=localVar%> <% } %></pre>
+            </div>
+
+            <div class="step" data-x="90000" data-y="-34700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="10">
+                <h3><span class="name">Geddy</span> has logging</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">geddy.log.info('Some info for you');</pre>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">geddy.log.warning('A warning!');</pre>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">geddy.log.error('An error occurred');</pre>
+            </div>
+
+            <div class="step" data-x="100000" data-y="-35700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="11">
+                <h3><span class="name">Geddy</span> has Metrics</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">$> npm install metrics</pre>
+            </div>
+
+            <div class="step" data-x="110000" data-y="-36700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="12">
+                <h3><span class="name">Geddy</span> has buffered streams</h3>
+                <p>
+                    <ul>
+                        <li>Allows for before filters</li>
+                        <li>Allows you to stream file uploads</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="120000" data-y="-38700"  data-rotate-z="-90" data-rotate-y="80" data data-scale="13">
+                <h3><span class="name">Geddy</span> has process clustering</h3>
+                <p>
+                    <ul>
+                        <li>Use all the cores in your server</li>
+                        <li>Spread the load across your machine</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="12000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h2>What does a <span class="name">Geddy</span> app look like?</h2>
+            </div>
+
+            <div class="step" data-x="13000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h3>First, lets generate a <span class="name">Geddy</span> app:</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">$> geddy app test_app</pre>
+            </div>
+
+            <div class="step" data-x="14000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h4><span class="name">Geddy</span> app directory <span class="good">structure</span>:</h4>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">
+/app
+/app/controllers
+/app/models
+/app/views
+/app/views/layouts
+/app/views/main
+/config
+/public
+</pre>
+            </div>
+
+            <div class="step" data-x="15000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h4><span class="name">Geddy</span> controller <span class="good">structure</span>:</h4>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">
+/app/controllers
+/app/controllers/application.js
+/app/controllers/main.js
+</pre>
+            </div>
+
+            <div class="step" data-x="16000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h4><span class="name">Geddy</span> views <span class="good">structure</span>:</h4>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">
+/app/views
+/app/views/layouts
+/app/views/layouts/application.html.ejs
+/app/views/main
+/app/views/main/index.html.ejs
+</pre>
+            </div>
+
+            <div class="step" data-x="17000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h3><span class="name">Geddy</span> models <span class="good">structure</span>:</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">
+/app/models
+</pre>
+                <p>
+                    <ul  style="padding-left: 200px">
+                        <li>Open ended right now</li>
+                        <li>Instance Methods</li>
+                        <li>Static Methods</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="18000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h3>How do you start a <span class="name">Geddy</span> app server?</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">
+$> cd test_app
+$> geddy
+                </pre>
+            </div>
+
+            <div class="step" data-x="19000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h3>Your <span class="name">Geddy</span> app is now running at:</h3>
+                <h4><a class="time" href="http://localhost:4000/">http://localhost:4000/</a></h4>
+            </div>
+
+            <div class="step" data-x="20000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <img src="geddy-app.png" style="box-shadow: 0px 0px 10px #666" width="900"/>
+            </div>
+
+            <div class="step" data-x="21000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h3>Lets generate a <span class="name">Geddy</span> resource:</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">
+$> geddy resource user
+</pre>
+            </div>
+
+            <div class="step" data-x="22000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h3>What did that just do?</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 170px; font-size: 28px">
+[ADDED] /app/models/user.js
+[ADDED] /app/controllers/users.js
+users resource route added to /config/router.js
+Created resource view templates.
+</pre>
+            </div>
+
+            <div class="step" data-x="23000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <h3>Now you've got these routes available</h3>
+                <pre class="prettyprint" style="text-align: left; padding-left: 270px; font-size: 28px">
+(GET)       /users
+(GET)       /users/add
+(GET)       /users/:id
+(GET)       /users/:id/edit
+(POST)      /users
+(PUT)       /users/:id
+(DELETE)    /users/:id
+</pre>
+            </div>
+
+            <div class="step" data-x="24000" data-y="27700"  data-rotate-z="180" data-rotate-y="180" data data-scale="1">
+                <img src="geddy-resource.png" style="box-shadow: 0px 0px 10px #666" width="900"/>
+            </div>
+
+            <div class="step" data-x="25000" data-y="26700"  data-rotate-z="180" data-rotate-y="270" data data-scale="1">
+                <h2>Lets Recap</h2>
+            </div>
+
+            <div class="step" data-x="25000" data-y="25700"  data-rotate-z="180" data-rotate-y="270" data data-scale="1">
+                <h3>Node is great for rapidly prototyping services and apps</h3>
+            </div>
+
+            <div class="step" data-x="25000" data-y="24700"  data-rotate-z="180" data-rotate-y="270" data data-scale="1">
+                <h3>Rapid prototyping without a framework results in spaghetti code</h3>
+            </div>
+
+            <div class="step" data-x="25000" data-y="23700"  data-rotate-z="180" data-rotate-y="270" data data-scale="1">
+                <h3>Current Node frameworks don't give you enough structure to allow for team work, feature building, and consistency</h3>
+            </div>
+
+            <div class="step" data-x="25000" data-y="22700"  data-rotate-z="180" data-rotate-y="270" data data-scale="1">
+                <h1>Geddy does.</h1>
+            </div>
+
+            <div class="step" data-x="25000" data-y="21700"  data-rotate-z="180" data-rotate-y="270" data data-scale="1">
+                <h3>So use it:</h3>
+                <pre class="good">$> npm install -g jake geddy</pre>
+                <p>
+                    <ul  style="padding-left: 100px">
+                        <li>Fork it on github at http://github.com/mde/geddy</li>
+                        <li>Learn Geddy at http://geddyjs.org</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="step" data-x="25000" data-y="20700"  data-rotate-z="180" data-rotate-y="270" data data-scale="1">
+                <h1>Thanks!</h1>
+                <h3>Any Questions?</h3>
+            </div>
+
+		</div>
+		<script type="text/javascript" src="impress.js"></script>
+	</body>
+</html>
