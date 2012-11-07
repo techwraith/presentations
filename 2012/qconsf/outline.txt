@@ -1,0 +1,92 @@
+- introduce myself
+
+- pain points of mvc and realtime:
+  - separate realtime servers with message queues and workers
+  - written in (potentially) 2.5 different languages
+  - have to re-write your model code for the front end
+  - cowboy real time code doesn't mix well with structured mvc style
+
+- What's going to win, Real Time or MVC?
+
+- Real Time?
+
+  - But MVC is dead
+    - "realtime is going to kill MVC"
+    - "MVC doesn't scale"
+
+  - MVC is here to stay
+    - It gives teams the structure to get things done
+    - It allows new people to jump in to a project easily
+    - It's easy to get started
+
+- MVC?
+
+  - But Real Time is hard
+    - Real time requires maintaining a new stack
+    - Event Machine and Tornado suck
+    - Front end code doesn't feel as structured as the backend
+
+  - But Real Time is also here to stay
+           - use web sockets to get updates pushed to clients from the server
+           - instant feedback for users
+
+- Both.
+
+  - Real Time and MVC actually mix pretty well
+    - Define your models in one place and use them on both sides of the client server divide
+    - Use your templates on both sides
+    - When a model instance is created, updated, or removed on the server, the same thing happens on the client
+
+- How we solved the Real Time problem (with Geddy).
+
+  - What is Geddy?
+    - The original MVC framework for Node.js
+    - It's very similar to rails
+    - it's got an ORM that works for noSQL and SQL dbs (and just plain old memory)
+    - It supports many different templating languages
+    - And now it supports Real Time right out of the box
+
+  - Lets make a quick real time app:
+    - `geddy app -r realtime`
+    - `cd realtime`
+    - `geddy scaffold -r item name description`
+    - `geddy`
+    - `open http://localhost:4000/items && open http://localhost:4000/items/add`
+
+  - Demo the app
+    - add an item in the first browser
+    - watch it show up in the second
+    - update an item
+    - watch it change
+    - remove an item
+    - watch it get removed
+
+  - What just happened?
+    - `geddy app -r realtime`
+      - generated an app with Real Time enabled
+    - `geddy scaffold -r item name description`
+      - generates an item model
+      - makes it available on the front end
+      - and sets up a controller, routes, and views for the item model
+     - Then you can just run the app with `geddy`
+
+   - Thats pretty cool, but how easy is it to change?
+     - when you add methods to your model, they are automatically available on the front end
+     - You can emit custom events
+
+- What we're going to do next
+
+  - Create an AJAX adapter
+    - do things like `instance.save(done);` on the front end
+  - Implement Real Time queries
+    - `geddy.model.Item.on('update', {created_at: {lt: new Date()}}, callback);
+  - Implement per instance Real Time events
+    - `instance.on('update', callback)`
+
+- If you want to help
+  - http://geddyjs.org
+  - join the mailing list
+  - open bugs
+  - send us pull requests
+
+- Any questions?

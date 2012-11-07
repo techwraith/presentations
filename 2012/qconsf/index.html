@@ -21,7 +21,9 @@
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
-      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+      document.write( '<link rel="stylesheet" href="css/print/' +
+                      ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) +
+                      '.css" type="text/css" media="print">' );
     </script>
 
     <!--[if lt IE 9]>
@@ -29,32 +31,341 @@
     <![endif]-->
   </head>
 
-  <bodybody>
+  <body>
 
     <div class="reveal">
 
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
 
-        <section>
-          <h1>Real Time MVC apps</h1>
-          <h3>How GeddyJS can help you write better real time code.</h3>
+        <section data-markdown>
+          # RT-MVC
+          Real Time Model/View/Controller Applications
+          <br/>
+          <br/>
+          <br/>
+          _[Daniel Erickson](http://twitter.com/techwraith)_ / [qConSF](http://qconsf.com/sf2012/)
+
         </section>
 
-        <section>
-          <h2>Heads Up</h2>
-          <p>
-            reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-            support for CSS 3D transforms to see it in its full glory.
-          </p>
-          <p>
-            <i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-          </p>
+        <section data-markdown>
+          # What's going to win <br/>Real Time or MVC?
 
-          <aside class="notes">
-            Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
-          </aside>
+          <aside class="notes" data-markdown>test</aside>
+
         </section>
+
+
+        <section data-markdown>
+          # Real Time?
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          # Yeah!
+          ## 'Cuz some people say:
+
+          * MVC doesn't scale well
+          * MVC is dead
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          ## But MVC is here to stay
+
+          * Gives teams structure to get things done
+          * Allows new people to jump into your project
+          * Easy to get started with
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          # What's going to win <br/>Real Time or MVC?
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          # MVC?
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          # Totally!
+          ## 'Cuz people think:
+
+          * Real Time is hard
+          * Maintain a new stack
+          * Event Machine and Tornado suck
+          * Front end code is messy
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          ## But Real Time is also here to stay
+
+          * Use WebSockets to get updates on the front end
+          * Instant feedback for your users
+          * Works really well on mobile
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          # What's going to win <br/>Real Time or MVC?
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          # Both!
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          # Real Time and MVC
+          ## actually mix pretty well
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          ## You can:
+
+          * Define your model once and use it all over the place
+          * use your templates on both sides of HTTP
+          * Mirror events from the backend to the frontend
+            * instance created
+            * instace updated
+            * instance removed
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          # How we solved the Real Time problem
+          # with Geddy
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          # Wait,
+          # What's Geddy?
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          ## The original MVC
+          ## framework for Node.js
+
+          * Very familiar if you know Rails
+          * Awesome noSQL and SQL ORM
+          * Many different templating languages
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          # And now it
+          # supports Real Time
+          ## right out of the box
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          ## So lets make an MVC app
+          ## that supports Real Time
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          ## Generate an app
+
+          ```
+          $ npm install -g geddy
+
+          $ geddy app -rt demo
+
+          $ cd demo
+
+          $ geddy scaffold -rt thing title description
+
+          $ geddy
+          ```
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+
+        <section data-markdown>
+          ## Test it out
+
+          Open up [http://localhost:4000/things]()
+
+          and [http://localhost:4000/things/add]()
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## For those of you following
+          ## along at home
+
+          1. add a `thing`
+          2. watch it show up in the other window
+          3. update the `thing`
+          4. watch it change in the other window
+          5. remove the item
+          6. watch it get removed from the other window.
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## What just happened?
+
+          `geddy app -rt demo`
+
+          <br/>
+
+          Generated a `demo` app with realtime enabled
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## What just happened?
+
+
+          `geddy scaffold -rt thing ...`
+
+          <br/>
+
+          Generated a `thing` resource
+
+          <br/>
+
+          - `thing` model
+          - made that model available on the front end
+          - `things` controller
+          - routes
+          - views that subscribe to the realtime events
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## How does it work?
+          ### On the server side:
+
+          - geddy sees the `realtime` flag in your config file
+          - copies your models over to a public js file
+          - sets up listeners for each model's lifecycle events
+          - proxies those lifecycle events to socket.io
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## How does it work?
+          ### On the client side:
+
+          - registers listeners for all model related events
+          - proxies them to the appropriate models
+          - scaffolds some code that hooks into real time events
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## Thats pretty cool,
+          ### but is it easy to change?
+
+          - modify your model once and you get it everywhere
+          - emit custom events on your models
+          - all generated code can be modified
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## What's next on the roadmap?
+
+          - Create an AJAX adapter for the front-end ORM
+          - Real time queries
+          - Per instance real time events
+          - A better way to share templates
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          ## Want to help out?
+          ### Check out Geddy at
+
+          [http://geddyjs.org](http://geddyjs.org)
+
+          Join the mailinglist
+
+          open bugs on github
+
+          send us pull requests
+
+          <aside class="notes" data-markdown>test</aside>
+
+        </section>
+
+        <section data-markdown>
+          # Any Questions?
+        </section>
+
       </div>
 
     </div>
